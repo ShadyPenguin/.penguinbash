@@ -20,7 +20,7 @@ function prompt {
   DEFAULT='\[\e[0m\]'
   DPATH="${BCYAN}\w${DEFAULT}"
   VIRTUALENV="${BYELLOW}${VENV}${DEFAULT}"
-  USER="$([ $UID -eq 0 ] && echo "${RED}" || echo "${BGREEN}")\u"
+  MY_USER="$([ $UID -eq 0 ] && echo "${RED}" || echo "${BGREEN}")\u"
 
-  PS1="[${VIRTUALENV} ${USER} ${DPATH} ] ${YELLOW}$(git_branch)${DEFAULT}$ "
+  PS1="[${VIRTUALENV} ${MY_USER} ${DPATH} ] ${YELLOW}$(git_branch)${DEFAULT}$ "
 }
