@@ -1,4 +1,4 @@
-# Penguin ps1
+# Penguin prompt setup
 
 PROMPT_COMMAND=prompt
 
@@ -20,7 +20,7 @@ function prompt {
   DEFAULT='\[\e[0m\]'
   DPATH="${BCYAN}\w${DEFAULT}"
   VIRTUALENV="${BYELLOW}${VENV}${DEFAULT}"
-  MY_USER="$([ $UID -eq 0 ] && echo "${RED}" || echo "${BGREEN}")\u"
+  MY_USER="$([ $UID -eq 0 ] && echo "${RED}" || echo "${BGREEN}")${USER}"
 
   PS1="[${VIRTUALENV} ${MY_USER} ${DPATH} ] ${YELLOW}$(git_branch)${DEFAULT}$ "
 }
