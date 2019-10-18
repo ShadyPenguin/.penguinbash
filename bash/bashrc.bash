@@ -8,3 +8,6 @@ source ~/.penguinbash/bash/function.bash
 
 # GIT
 source ~/.penguinbash/git/git-completion.bash
+
+# Optional Work-related stuff
+source ~/.penguinbash/work/*
