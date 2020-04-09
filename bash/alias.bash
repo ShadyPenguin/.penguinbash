@@ -1,8 +1,16 @@
 # Penguin aliases
+export PENGUIN_HOME="~/.penguinbash/"
 
-alias pb="cd ~/.penguinbash"
-alias pm="python -m"
-alias pm3="python3 -m"
+#################################
+# General
+#################################
 alias ll="ls -al"
-
 alias gcm="git checkout master"
+alias grr="git reset --hard head"
+alias vi="vim"
+
+#################################
+# Penguin related aliases
+#################################
+alias rs=". ${PENGUIN_HOME}/bash/bashrc.bash"
+alias home="cd ${PENGUIN_HOME}"

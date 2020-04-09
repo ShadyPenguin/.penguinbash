@@ -10,4 +10,4 @@ source ~/.penguinbash/bash/function.bash
 source ~/.penguinbash/git/git-completion.bash
 
 # Optional Work-related stuff
-source ~/.penguinbash/work/*
+for f in ~/.penguinbash/work/*; do source $f; done
