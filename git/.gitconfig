@@ -1,0 +1,10 @@
+[user]
+	name = ShadyPenguin
+	email = jakesikora.01@gmail.com
+[alias]
+	br = branch
+	co = checkout
+	st = status
+	outs = log @{u}..
+[credential]
+	helper = osxkeychain
