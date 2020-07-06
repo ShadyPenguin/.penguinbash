@@ -9,6 +9,8 @@ alias gcm="git checkout master"
 alias grr="git reset --hard head"
 alias vi="vim"
 alias kc="kubectl"
+alias kx="kubectx"
+alias kn="kubens"
 
 #################################
 # Penguin related aliases
